@@ -1,0 +1,90 @@
+{
+      "HM5Q44ZBKR": {
+            "Guest": "Louise Galtier",
+            "Listing": "Private room",
+            "Start Date": "2023-04-21",
+            "End Date": "2023-04-24",
+            "Nights": 3,
+            "Amount": 215.94
+      },
+      "HMAS4WF4S4": {
+            "Guest": "Anna Jimenez",
+            "Listing": "Private room",
+            "Start Date": "2023-04-28",
+            "End Date": "2023-04-30",
+            "Nights": 2,
+            "Amount": 161.95
+      },
+      "HMAXP929JC": {
+            "Guest": "Riad Darawish",
+            "Listing": "Private room",
+            "Start Date": "2023-05-01",
+            "End Date": "2023-05-31",
+            "Nights": 30,
+            "Amount": 1084.5
+      },
+      "HMPB9RF9BZ": {
+            "Guest": "Emily Mn",
+            "Listing": "Private room",
+            "Start Date": "2023-07-01",
+            "End Date": "2023-07-02",
+            "Nights": 1,
+            "Amount": 105.08
+      },
+      "HMQKETKZAB": {
+            "Guest": "Cerys Powell",
+            "Listing": "Modern 1-Bed",
+            "Start Date": "2023-07-15",
+            "End Date": "2023-07-16",
+            "Nights": 1,
+            "Amount": 119.54
+      },
+      "HM8ENDSFSW": {
+            "Guest": "Ilham Md Zain",
+            "Listing": "Modern 1-Bed",
+            "Start Date": "2023-07-23",
+            "End Date": "2023-07-28",
+            "Nights": 5,
+            "Amount": 554.3
+      },
+      "HMNRTHJX9A": {
+            "Guest": "Leontine Aldabo",
+            "Listing": "Modern 1-Bed",
+            "Start Date": "2023-08-08",
+            "End Date": "2023-08-13",
+            "Nights": 5,
+            "Amount": 554.3
+      },
+      "HMR32AXC42": {
+            "Guest": "Tobias Dutton",
+            "Listing": "Modern 1-Bed",
+            "Start Date": "2023-08-17",
+            "End Date": "2023-08-23",
+            "Nights": 6,
+            "Amount": 659.37
+      },
+      "HMCJQJNW33": {
+            "Guest": "Kahleim Giles",
+            "Listing": "Modern 1-Bed",
+            "Start Date": "2023-09-14",
+            "End Date": "2023-09-17",
+            "Nights": 3,
+            "Amount": 344.15
+      },
+      "HMCDCBZYT2": {
+            "Guest": "Tina Liu",
+            "Listing": "Private room",
+            "Start Date": "2023-10-09",
+            "End Date": "2023-10-16",
+            "Nights": 7,
+            "Amount": 519.37
+      },
+      "HMC2CX39BJ": {
+            "Guest": "Patricia Meli",
+            "Listing": "Private room",
+            "Start Date": "2023-11-02",
+            "End Date": "2023-11-06",
+            "Nights": 4,
+            "Amount": 294.99
+      }
+}
