@@ -1,4 +1,6 @@
-from flask_bootstrap import Bootstrap4, Bootstrap5
+
+from flask_bootstrap import Bootstrap
+
 from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
@@ -21,7 +23,8 @@ This will install the packages from requirements.txt for this project.
 '''
 
 app = Flask(__name__)
-bootstrap = Bootstrap5(app)
+
+bootstrap = Bootstrap(app)
 
 app.config['SECRET_KEY'] = SECRET_KEY
 

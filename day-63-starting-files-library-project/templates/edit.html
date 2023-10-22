@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Rating</title>
+    {% from 'bootstrap/form.html' import render_form %}
+</head>
+<body>
+<p>Book Name: {{ book.title }}</p>
+<p>Current Rating: {{ book.rating }}</p>
+<form method="POST"
+      action="{{ url_for('edit', id = book.id) }}">
+    {{ render_form(form) }}
+
+</form>
+</body>
+</html>
