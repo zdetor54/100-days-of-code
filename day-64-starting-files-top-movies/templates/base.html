@@ -6,10 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    {% from 'bootstrap4/form.html' import render_form %}
     {% block styles %}
     <!-- Load Bootstrap-Flask CSS here -->
     {{ bootstrap.load_css() }}
+
     <!-- Link to the styles.css here to apply styling to all the child templates.-->
     <link
       rel="stylesheet"
