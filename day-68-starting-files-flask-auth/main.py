@@ -43,28 +43,56 @@ def register():
             name = request.form.get('name')
         )
         db.session.add(new_user)
-        db.session.commit()
-        login_user(new_user)
-        return redirect('secrets')
+        try:
+            db.session.commit()
+            login_user(new_user)
+            return redirect('secrets')
+        except:
+            flash('The user already exists.')
+            return render_template("register.html")
     return render_template("register.html")
 
 
-@app.route('/login')
+@app.route('/login', methods = ['GET','POST'])
 def login():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        password = request.form.get('password')
+
+        print(password)
+
+        result = User.query.filter_by(email=email).first()
+        # result = db.session.execute(db.select(User).where(User.email == email))
+
+        try:
+            if check_password_hash(result.password, password):
+                login_user(result)
+                return redirect('secrets')
+            else:
+                flash('Password incorrect, please try again.')
+                return render_template(("login.html"))
+        except:
+            flash("That email does not exist, please try again.")
+            return render_template(("login.html"))
+
     return render_template("login.html")
 
 
 @app.route('/secrets')
+@login_required
 def secrets():
-    return render_template("secrets.html")
+    return render_template("secrets.html", name=current_user.name)
 
 
 @app.route('/logout')
 def logout():
-    pass
+    logout_user()
+    return redirect('/')
+
 
 
 @app.route('/download')
+@login_required
 def download():
     return send_from_directory('static','files/cheat_sheet.pdf')
 
